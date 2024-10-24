@@ -1,0 +1,115 @@
+/* Center the search container in the middle of the page */
+.characters-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Align input and button next to each other */
+.search-container {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style the input */
+.search-input {
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 450px;
+}
+
+/* Style the button */
+.search-button {
+    padding: 20px 30px;
+    font-size: 23px;
+    background-color: #444583;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #444583;
+}
+
+/* Style the characters grid */
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 characters per row */
+    gap: 50px;
+    justify-items: center;
+}
+
+/* Style each character card */
+.character-card {
+    background-color: #2b2b2b;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 180px;
+}
+
+/* Character card hover effect */
+.character-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Style the character image */
+.character-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Style the character name */
+.character-name {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* Remove the underline */
+}
+
+/* Remove underline from the Link */
+.character-card a {
+    text-decoration: none; /* No underline on links */
+}
+
+/* Add hover effect to the character name */
+.character-card a:hover .character-name {
+    color: #00bcd4; /* Optional: change color on hover */
+}
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Styling for filter dropdowns */
+.filter-select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.filter-select:hover {
+    border-color: #00e676; /* Highlight on hover */
+}

@@ -1,0 +1,31 @@
+/* Style the navbar container */
+.navbar {
+    background-color: #333;  /* Dark background for the navbar */
+    padding: 10px 20px;  /* Padding for the navbar */
+    display: flex;  /* Align items horizontally */
+    justify-content: center;  /* Center the links */
+    gap: 20px;  /* Space between each link */
+    margin-bottom: 10px;
+}
+
+/* Style for the links */
+.nav-link {
+    color: white;  /* White text color */
+    text-decoration: none;  /* Remove underline */
+    font-size: 18px;  /* Font size */
+    font-weight: bold;  /* Make text bold */
+    padding: 8px 16px;  /* Padding around the text */
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    background-color: #575757;  /* Lighten the background on hover */
+    border-radius: 4px;  /* Rounded corners on hover */
+}
+
+/* Active link style (optional, if you want to highlight the current page link) */
+.nav-link-active {
+    background-color: #4CAF50;  /* Active link background */
+    border-radius: 4px;  /* Rounded corners */
+}

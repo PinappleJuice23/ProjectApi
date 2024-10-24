@@ -1,0 +1,36 @@
+/* Center the character details in the middle of the page */
+.character-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+/* Style the character name */
+.character-details h2 {
+    font-size: 36px; /* Larger font size */
+    color: white;    /* White text */
+    margin-bottom: 20px; /* Space below the name */
+}
+
+/* Style the image */
+.character-details img {
+    width: 250px; /* Adjust the width */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 20px; /* Space between the image and the text */
+}
+
+/* Style the character information */
+.character-details p {
+    font-size: 20px; /* Larger font size for the info */
+    color: white;    /* White text */
+    margin: 10px 0;  /* Space between each piece of info */
+}
+
+/* Optional: Add a background color to make the text more visible */
+body {
+    background-color: #1f1f1f; /* Dark background to contrast white text */
+}

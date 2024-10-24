@@ -1,0 +1,63 @@
+/* Footer container styling */
+.footer-container {
+    background-color: #333;  /* Dark background similar to navbar */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  /* Ensure responsiveness for smaller screens */
+    color: white;
+    margin-top: 40px; /* Adds space from main content */
+}
+
+/* Footer column styling */
+.footer-column {
+    flex: 1;  /* Allow each column to take up equal space */
+    margin: 10px;  /* Spacing between columns */
+}
+
+/* Footer headings */
+.footer-column h3 {
+    font-size: 20px;
+    color: #00e676;  /* Matching color with the navbar links */
+    margin-bottom: 10px;
+}
+
+/* Footer list items */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+/* Footer links */
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Footer link hover effect */
+.footer-column a:hover {
+    color: #00e676;  /* Green color on hover, same as navbar */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Make footer responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
